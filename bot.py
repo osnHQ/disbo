@@ -1,7 +1,9 @@
 import os
 import discord
 from discord.ext import commands
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class DisboBot(commands.Bot):
     def __init__(self) -> None:
