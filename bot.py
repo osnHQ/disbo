@@ -24,6 +24,8 @@ class DisboBot(commands.Bot):
 
         if test_channel:
             await test_channel.send(f'Welcome {member.mention} to the developer channel!')
+            await test_channel.send(f"{os.getenv('FIRST_CONTRIBUTION_MESSAGE')}")
+
         else:
             print("Test channel not found!")
 
